@@ -1,0 +1,19 @@
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="com.piotrwalkusz.timemarker.view.controller.MainController"
+          xmlns:fx="http://javafx.com/fxml"
+          id="root">
+
+    <Canvas fx:id="timelineCanvas" GridPane.rowIndex="0" GridPane.columnIndex="0" width="500" height="20"/>
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#startButton">Start</Button>
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#endButton">End</Button>
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#addButton">New</Button>
+    <Text fx:id="totalTime" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
+</GridPane>
